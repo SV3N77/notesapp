@@ -3,7 +3,7 @@ import Head from "next/head";
 export default function Home() {
   return (
     <main className="flex flex-col items-center p-4">
-      <div className="w-full max-w-xs">
+      <div className="w-full max-w-xs py-10">
         <form className="mb-4 rounded bg-white px-8 pt-6 pb-8 shadow-md">
           <div className="mb-4">
             <label
@@ -27,14 +27,11 @@ export default function Home() {
               Password
             </label>
             <input
-              className="focus:shadow-outline mb-3 w-full appearance-none rounded border border-red-500 py-2 px-3 leading-tight text-gray-700 shadow focus:outline-none"
+              className="focus:shadow-outline mb-3 w-full appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow focus:outline-none"
               id="password"
               type="password"
               placeholder="******************"
             />
-            <p className="text-xs italic text-red-500">
-              Please choose a password.
-            </p>
           </div>
           <div className="flex items-center justify-between">
             <button
